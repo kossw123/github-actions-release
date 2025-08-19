@@ -1,0 +1,11 @@
+name: Release Example
+on:
+  release:
+    types: [published]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print on Release
+        run: echo "Hello from release event!" 

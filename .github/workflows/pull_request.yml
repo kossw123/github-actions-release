@@ -1,0 +1,10 @@
+name: PR Example
+on:
+  pull_request:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print on Pull Request
+        run: echo "Hello from pull_request event!"
